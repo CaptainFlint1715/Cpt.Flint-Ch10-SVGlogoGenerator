@@ -1,7 +1,9 @@
+// importing shape constructors from shapes.js, along with inquirer and fs packages
 const { Circle, Triangle, Square } = require('./lib/shapes')
 const inquirer = require('inquirer')
 const fs = require('fs')
 
+// array of questions to be prompted
 const questions = [
     {
         type: 'input',
@@ -30,6 +32,7 @@ const questions = [
     },
 ]
 
+// function to run inquirer and take input data to write svg file
 function init() {
 
     inquirer
